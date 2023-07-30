@@ -1,0 +1,47 @@
+@import "../../colors";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.input {
+  transition: all ease-in-out 0.2s;
+  border: 1px solid $grey-border;
+  border-radius: 8px;
+  padding: 12px 16px 12px 32px;
+  color: $dark-grey;
+  outline: none;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  &::placeholder {
+    color: $dark-grey;
+    opacity: 0.5;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:focus,
+  &:active {
+    border: 1px solid $purple;
+    box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+  }
+
+  &.inputError {
+    border: 1px solid $red;
+    color: $red;
+  }
+}
+
+.errorMessage {
+  color: $red !important;
+}
+
+.icon {
+  position: absolute;
+  left: 16px;
+}

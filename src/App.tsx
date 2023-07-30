@@ -1,7 +1,5 @@
-import { Heading } from "./components/typography/heading/heading";
-
 function App() {
-  return <Heading as="h2">Heading</Heading>;
+  return <h1>app</h1>;
 }
 
 export default App;
