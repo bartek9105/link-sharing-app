@@ -1,0 +1,44 @@
+@import "../../colors";
+
+.button {
+  border-radius: 8px;
+  padding: 11px 27px;
+  outline: none;
+  background: none;
+  border: 0;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.buttonPrimary {
+  background-color: $purple;
+  color: $white;
+
+  &:focus,
+  &:active {
+    color: $purple-hover;
+    box-shadow: 0px 0px 32px 0px rgba(99, 60, 255, 0.25);
+  }
+  &:disabled {
+    opacity: 0.25;
+  }
+}
+
+.buttonSecondary {
+  color: $purple;
+  border: 1px solid $purple;
+
+  &:focus,
+  &:active {
+    background: $light-purple;
+  }
+  &:disabled {
+    opacity: 0.25;
+  }
+}

@@ -1,5 +1,7 @@
+import { Button } from "./components/button/button";
+
 function App() {
-  return <h1>app</h1>;
+  return <Button variant="primary">Button</Button>;
 }
 
 export default App;
